@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Abdominal Workout Recommender</h1>
+        <p>Enter your details below to get a tailored exercise recommendation!</p>
+
+        <form method="POST" class="input-form">
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="100" required placeholder="e.g., 30">
+            </div>
+
+            <div class="form-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" step="0.1" id="weight" name="weight" min="30" max="200" required placeholder="e.g., 70.5">
+            </div>
+
+            <div class="form-group">
+                <label for="equipment">Equipment:</label>
+                <select id="equipment" name="equipment" required>
+                    <option value="" disabled selected>Select equipment</option>
+                    {% for option in equipment_options %}
+                        <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="level">Fitness Level:</label>
+                <select id="level" name="level" required>
+                    <option value="" disabled selected>Select level</option>
+                    {% for option in level_options %}
+                        <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="goal">Fitness Goal:</label>
+                <select id="goal" name="goal" required>
+                    <option value="" disabled selected>Select goal</option>
+                    {% for option in goal_options %}
+                        <option value="{{ option }}">{{ option }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <button type="submit">Get Recommendation</button>
+        </form>
+
+        {% if recommendation %}
+            <div class="recommendation">
+                <h2>Your Recommended Exercise:</h2>
+                <p>{{ recommendation }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
