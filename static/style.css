@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -12,6 +13,7 @@ body {
     line-height: 1.6;
 }
 
+/* Container styles */
 .container {
     max-width: 800px;
     margin: 40px auto;
@@ -21,18 +23,21 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Heading styles */
 h1 {
     text-align: center;
     color: #2c3e50;
     margin-bottom: 10px;
 }
 
+/* Paragraph styles */
 p {
     text-align: center;
     color: #7f8c8d;
     margin-bottom: 20px;
 }
 
+/* Form styles */
 .input-form {
     display: flex;
     flex-direction: column;
@@ -67,6 +72,7 @@ p {
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
 }
 
+/* Button styles */
 button {
     padding: 12px 20px;
     background-color: #3498db;
@@ -75,7 +81,7 @@ button {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
     max-width: 200px;
     align-self: center;
 }
@@ -84,6 +90,7 @@ button:hover {
     background-color: #2980b9;
 }
 
+/* Recommendation section styles */
 .recommendation {
     margin-top: 30px;
     padding: 20px;
