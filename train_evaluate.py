@@ -8,30 +8,36 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import pickle
 import matplotlib.pyplot as plt
+from sklearn.model_selection import GridSearchCV, StratifiedKFold
 from load_clean import load_data, clean_data
 from feature_engineering import encode_features, prepare_features
 
 def train_models(X, y):
-    """
-    Train multiple machine learning models and return the best one.
-    """
-    # Split the data
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-    # Initialize models
     models = {
-        'Decision Tree': DecisionTreeClassifier(random_state=42),
-        'Random Forest': RandomForestClassifier(random_state=42),
-        'KNN': KNeighborsClassifier(),
-        'SVM': SVC(random_state=42),
-        'Gradient Boosting': GradientBoostingClassifier(random_state=42)
+        'Decision Tree': (DecisionTreeClassifier(random_state=42), {'max_depth': [None, 10, 20, 30]}),
+        'Random Forest': (RandomForestClassifier(random_state=42), {'n_estimators': [50, 100, 200]}),
+        'KNN': (KNeighborsClassifier(), {'n_neighbors': [3, 5, 7]}),
+        'SVM': (SVC(random_state=42), {'C': [0.1, 1, 10], 'kernel': ['linear', 'rbf']}),
+        'Gradient Boosting': (GradientBoostingClassifier(random_state=42), {'n_estimators': [50, 100, 200]})
     }
 
-    # Train and evaluate models
+    min_class_count = min(np.bincount(y_train))
+    n_splits = max(2, min(5, min_class_count))
+    if min_class_count < 2:
+        from sklearn.model_selection import KFold
+        cv = KFold(n_splits=2, shuffle=True, random_state=42)
+        print("Warning: Stratification not possible due to small class sizes. Using KFold instead.")
+    else:
+        cv = StratifiedKFold(n_splits=n_splits)
+
     results = {}
-    for name, model in models.items():
-        model.fit(X_train, y_train)
-        y_pred = model.predict(X_test)
+    for name, (model, params) in models.items():
+        grid_search = GridSearchCV(model, params, cv=cv, scoring='accuracy')
+        grid_search.fit(X_train, y_train)
+        best_model = grid_search.best_estimator_
+        y_pred = best_model.predict(X_test)
         results[name] = {
             'Accuracy': accuracy_score(y_test, y_pred),
             'Precision': precision_score(y_test, y_pred, average='weighted', zero_division=0),
@@ -39,41 +45,33 @@ def train_models(X, y):
             'F1': f1_score(y_test, y_pred, average='weighted', zero_division=0)
         }
 
-    # Print results
     print("Model Evaluation Results:")
     for name, metrics in results.items():
         print(f"{name}:")
         for metric, value in metrics.items():
             print(f"  {metric}: {value:.4f}")
 
-    # Plot evaluation metrics
     metrics_df = pd.DataFrame(results).T
     metrics_df.plot(kind='bar', figsize=(10, 6))
     plt.title('Model Performance Comparison')
     plt.ylabel('Score')
+    plt.savefig('model_performance.png')
     plt.close()
 
-    # Choose the best model (based on F1-score)
     best_model_name = max(results, key=lambda x: results[x]['F1'])
-    best_model = models[best_model_name]
+    best_model = models[best_model_name][0]
     print(f"Best model: {best_model_name} with F1-score: {results[best_model_name]['F1']:.4f}")
 
-    # Retrain the best model on the full dataset
     best_model.fit(X, y)
-
-    # Save the best model
     with open('models/model.pkl', 'wb') as f:
         pickle.dump(best_model, f)
 
     return best_model, results
 
 if __name__ == "__main__":
-    # Load and preprocess data
     data = load_data('data/cleaned.csv')
     if data is not None:
         cleaned_data = clean_data(data)
-        encoded_data, _, _, _, _ = encode_features(cleaned_data)
+        encoded_data, _, _, _ = encode_features(cleaned_data)
         X, y = prepare_features(encoded_data)
-
-        # Train and evaluate models
         best_model, results = train_models(X, y)
