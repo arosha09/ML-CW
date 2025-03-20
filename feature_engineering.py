@@ -14,10 +14,13 @@ def encode_features(data):
     le_level = LabelEncoder()
     le_exercise_name = LabelEncoder()
 
+    # Clean the Level column
+    data['Level'] = data['Level'].str.lower().str.strip()
+
     # Fit label encoders on all possible labels
     le_body_part.fit(data['Body Part/Muscle'])
     le_equipment.fit(data['Equipment'])
-    le_level.fit(data['Level'])
+    le_level.fit(['easy', 'intermediate', 'hard'])  # Ensure the encoder is trained with these labels
     le_exercise_name.fit(data['Exercise Name'])
 
     # Encode categorical columns

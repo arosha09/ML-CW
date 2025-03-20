@@ -22,7 +22,7 @@ data = pd.read_csv('data/cleaned.csv')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    levels = le_level.classes_
+    levels = ['easy', 'intermediate', 'hard']
     workout_plan = None
 
     if request.method == 'POST':
@@ -31,13 +31,17 @@ def index():
         level = request.form['level']
         days = int(request.form['days'])
 
+        # Use a valid value from the training data for 'Body Part/Muscle' and 'Equipment'
+        valid_body_part = data['Body Part/Muscle'].mode()[0]
+        valid_equipment = data['Equipment'].mode()[0]
+
         # Prepare input data
         input_data = pd.DataFrame({
-            'Body Part/Muscle': [''],
-            'Equipment': [''],
-            'Level': [level],
-            'Age': [age],
-            'Weight': [weight]
+            'Body Part/Muscle': [valid_body_part] * days,
+            'Equipment': [valid_equipment] * days,
+            'Level': [level] * days,
+            'Age': [age] * days,
+            'Weight': [weight] * days
         })
 
         # Encode input data
@@ -53,7 +57,7 @@ def index():
                 'Exercises': []
             }
             for _ in range(6):  # Assuming 6 exercises per day
-                workout = model.predict(input_data)
+                workout = model.predict(input_data.iloc[[day]])
                 workout = le_exercise_name.inverse_transform(workout)[0]
                 exercise_data = data[data['Exercise Name'] == workout].iloc[0]
                 day_plan['Exercises'].append({

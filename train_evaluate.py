@@ -51,7 +51,6 @@ def train_models(X, y):
     metrics_df.plot(kind='bar', figsize=(10, 6))
     plt.title('Model Performance Comparison')
     plt.ylabel('Score')
-    plt.savefig('model_performance.png')
     plt.close()
 
     # Choose the best model (based on F1-score)
