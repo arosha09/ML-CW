@@ -14,43 +14,57 @@ with open('models/le_equipment.pkl', 'rb') as f:
     le_equipment = pickle.load(f)
 with open('models/le_level.pkl', 'rb') as f:
     le_level = pickle.load(f)
+with open('models/le_exercise_name.pkl', 'rb') as f:
+    le_exercise_name = pickle.load(f)
 
 # Load the dataset to get sets and reps
 data = pd.read_csv('data/cleaned.csv')
 
-@app.route('/')
-def home():
-    return render_template('index.html')
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    levels = le_level.classes_
+    workout_plan = None
 
-@app.route('/predict', methods=['POST'])
-def predict():
-    # Get user inputs
-    age = int(request.form['age'])
-    weight = float(request.form['weight'])
-    fitness_level = request.form['fitness_level']
-    target_muscle = request.form['target_muscle']
-    equipment = request.form['equipment']
+    if request.method == 'POST':
+        age = int(request.form['age'])
+        weight = int(request.form['weight'])
+        level = request.form['level']
+        days = int(request.form['days'])
 
-    # Map fitness level to dataset levels
-    level_map = {'Beginner': 'Easy', 'Intermediate': 'Intermediate', 'Advanced': 'Hard'}
-    level = level_map[fitness_level]
+        # Prepare input data
+        input_data = pd.DataFrame({
+            'Body Part/Muscle': [''],
+            'Equipment': [''],
+            'Level': [level],
+            'Age': [age],
+            'Weight': [weight]
+        })
 
-    # Encode inputs
-    body_part_encoded = le_body_part.transform([target_muscle])[0]
-    equipment_encoded = le_equipment.transform([equipment])[0]
-    level_encoded = le_level.transform([level])[0]
+        # Encode input data
+        input_data['Body Part/Muscle'] = le_body_part.transform(input_data['Body Part/Muscle'])
+        input_data['Equipment'] = le_equipment.transform(input_data['Equipment'])
+        input_data['Level'] = le_level.transform(input_data['Level'])
 
-    # Predict exercise
-    input_data = np.array([[body_part_encoded, equipment_encoded, level_encoded]])
-    exercise = model.predict(input_data)[0]
+        # Generate workout plan
+        workout_plan = []
+        for day in range(days):
+            day_plan = {
+                'Day': day + 1,
+                'Exercises': []
+            }
+            for _ in range(6):  # Assuming 6 exercises per day
+                workout = model.predict(input_data)
+                workout = le_exercise_name.inverse_transform(workout)[0]
+                exercise_data = data[data['Exercise Name'] == workout].iloc[0]
+                day_plan['Exercises'].append({
+                    'Name': workout,
+                    'Body_Part': exercise_data['Body Part/Muscle'],
+                    'Equipment': exercise_data['Equipment'],
+                    'Sets_and_Reps': exercise_data['Sets and Reps']
+                })
+            workout_plan.append(day_plan)
 
-    # Get sets and reps from the dataset
-    exercise_info = data[data['Exercise Name'] == exercise].iloc[0]
-    sets_reps = exercise_info['Sets and Reps']
-
-    # Generate a simple workout plan
-    plan = f"Recommended Exercise: {exercise}\nSets and Reps: {sets_reps}"
-    return render_template('result.html', plan=plan)
+    return render_template('index.html', levels=levels, workout_plan=workout_plan)
 
 if __name__ == '__main__':
     app.run(debug=True)

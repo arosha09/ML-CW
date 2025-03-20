@@ -2,55 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Workout Generator</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Predictor</title>
 </head>
 <body>
-    <h1>Workout Plan Generator</h1>
-    <form method="POST" action="/generate">
-        <label for="body_part">Target Body Part:</label>
-        <select name="body_part" id="body_part">
-            {% for part in body_parts %}
-                <option value="{{ part }}">{{ part }}</option>
-            {% endfor %}
-        </select><br><br>
+    <h1>Workout Predictor</h1>
+    <form method="POST">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
 
-        <label for="equipment">Equipment Available:</label>
-        <select name="equipment" id="equipment">
-            {% for eq in equipment %}
-                <option value="{{ eq }}">{{ eq }}</option>
-            {% endfor %}
-        </select><br><br>
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" name="weight" required><br>
 
-        <label for="level">Fitness Level:</label>
-        <select name="level" id="level">
+        <label for="level">Level:</label>
+        <select id="level" name="level">
             {% for lvl in levels %}
                 <option value="{{ lvl }}">{{ lvl }}</option>
             {% endfor %}
-        </select><br><br>
+        </select><br>
 
-        <input type="submit" value="Generate Workout">
+        <label for="days">Number of Days:</label>
+        <select id="days" name="days">
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br>
+
+        <input type="submit" value="Predict Workout">
     </form>
 
-    {% if workout %}
-    <h2>Your Workout Plan</h2>
-    <p>Targeting: {{ body_part }} | Equipment: {{ equipment }} | Level: {{ level }}</p>
-    <table>
-        <tr>
-            <th>Exercise Name</th>
-            <th>Body Part/Muscle</th>
-            <th>Equipment</th>
-            <th>Sets and Reps</th>
-        </tr>
-        {% for exercise in workout %}
-        <tr>
-            <td>{{ exercise['Exercise Name'] }}</td>
-            <td>{{ exercise['Body Part/Muscle'] }}</td>
-            <td>{{ exercise['Equipment'] }}</td>
-            <td>{{ exercise['Sets and Reps'] }}</td>
-        </tr>
+    {% if workout_plan %}
+        <h2>Recommended Workout Plan:</h2>
+        {% for day in workout_plan %}
+            <h3>Day {{ day.Day }}:</h3>
+            <ul>
+                {% for exercise in day.Exercises %}
+                    <li>{{ exercise.Name }} ({{ exercise.Body_Part }}, {{ exercise.Equipment }}): {{ exercise.Sets_and_Reps }}</li>
+                {% endfor %}
+            </ul>
         {% endfor %}
-    </table>
     {% endif %}
 </body>
 </html>
