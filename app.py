@@ -30,25 +30,18 @@ def index():
         days = int(request.form['days'])
         include_core = 'include_core' in request.form
 
-        # Get a placeholder exercise for reference values
         placeholder_exercise = data.iloc[0]
         
-        # Create a feature array with all 8 required features
         sample = np.array([[
             le_body_part.transform([placeholder_exercise['Body Part/Muscle']])[0],
             le_equipment.transform([placeholder_exercise['Equipment']])[0],
-            # Add default values for the additional features
-            3,  # Number_of_Sets (default value)
-            10, # Min_Reps (default value)
-            12, # Max_Reps (default value)
-            1,  # Muscle_Group_Count (default value)
-            0,  # Is_Full_Body (default: not a full-body exercise)
-            1   # Equipment_Complexity (default value)
+            3,  
+            10, 
+            12, 
+            1,  
+            0,  
+            1   
         ]])
-        
-        # Replace age and weight in appropriate positions
-        # Note: In your training model, you might need to adjust where these actually go
-        # For now, I'm assuming they're not directly used in prediction
         
         predicted_level_encoded = model.predict(sample)[0]
         predicted_level = le_level.inverse_transform([predicted_level_encoded])[0]

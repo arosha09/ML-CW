@@ -16,16 +16,13 @@ def extract_sets_reps_features(data):
     data['Min_Reps'] = data['Sets and Reps'].str.extract(r'(\d+)-').astype(float)
     data['Max_Reps'] = data['Sets and Reps'].str.extract(r'-(\d+)').astype(float)
     
-    # Handle cases where reps are a single number (e.g., "3 sets of 10")
     single_reps = data['Sets and Reps'].str.extract(r'sets of (\d+)').astype(float)
     data['Min_Reps'] = data['Min_Reps'].fillna(single_reps[0])
     data['Max_Reps'] = data['Max_Reps'].fillna(single_reps[0])
     
-    # Handle cases with seconds (e.g., "3 sets of 30-60")
     data['Min_Reps'] = data['Min_Reps'].fillna(data['Sets and Reps'].str.extract(r'sets of (\d+)').astype(float)[0])
     data['Max_Reps'] = data['Max_Reps'].fillna(data['Min_Reps'])
     
-    # Fill any remaining NaNs with median values
     data['Number_of_Sets'] = data['Number_of_Sets'].fillna(data['Number_of_Sets'].median())
     data['Min_Reps'] = data['Min_Reps'].fillna(data['Min_Reps'].median())
     data['Max_Reps'] = data['Max_Reps'].fillna(data['Max_Reps'].median())
@@ -34,13 +31,9 @@ def extract_sets_reps_features(data):
 
 def add_exercise_complexity(data):
     """Add a feature for exercise complexity based on muscle groups and equipment."""
-    # Count number of muscle groups (e.g., "Chest, Shoulders" -> 2)
     data['Muscle_Group_Count'] = data['Body Part/Muscle'].str.split(',').apply(len)
-    
-    # Flag full-body exercises
     data['Is_Full_Body'] = data['Body Part/Muscle'].str.contains('Full Body', case=False, na=False).astype(int)
     
-    # Rank equipment by complexity (simplified)
     equipment_complexity = {
         'Bodyweight': 1, 'Dumbbells': 2, 'Barbell': 3, 'Kettlebell': 2, 'Pull-Up Bar': 2,
         'Cable Machine': 2, 'Machine': 2, 'Box': 1, 'Bench': 1, 'Parallel Bars': 2,
@@ -54,10 +47,8 @@ def add_exercise_complexity(data):
 
 def prepare_features(data):
     """Update feature preparation with new features."""
-    # Debug: Print available columns
     print("Columns in data before preparing features:", data.columns.tolist())
     
-    # Ensure all required columns are present
     required_columns = [
         'Body Part/Muscle_Encoded', 'Equipment_Encoded', 'Number_of_Sets', 
         'Min_Reps', 'Max_Reps', 'Muscle_Group_Count', 'Is_Full_Body', 
@@ -86,11 +77,9 @@ def objective(trial, X_train, y_train, X_test, y_test):
         'alpha': trial.suggest_float('alpha', 1e-3, 10.0, log=True),
     }
     
-    # Convert data to DMatrix format for xgb.train
     dtrain = xgb.DMatrix(X_train, label=y_train)
     dtest = xgb.DMatrix(X_test, label=y_test)
     
-    # Train the model with early stopping using xgb.train
     evals = [(dtrain, 'train'), (dtest, 'eval')]
     bst = xgb.train(
         param,
@@ -153,12 +142,9 @@ def train_models(X, y):
     
     # Create an XGBClassifier instance to use the trained booster
     best_model = xgb.XGBClassifier(**best_params)
-    best_model._Booster = bst  # Assign the trained booster to the classifier
-    
-    # Debug: Print shape of X_test before prediction
+    best_model._Booster = bst  
     print(f"X_test shape before prediction: {X_test.shape}")
     
-    # Evaluate the model
     y_pred = best_model.predict(X_test)
     results = {
         'XGBoost': {
@@ -190,36 +176,16 @@ def train_models(X, y):
     return best_model, results
 
 if __name__ == "__main__":
-    # Load and clean data
     data = load_data('data/cleaned.csv')
     if data is not None:
         cleaned_data = clean_data(data)
-        
-        # Debug: Print columns after cleaning
         print("Columns after cleaning:", cleaned_data.columns.tolist())
-        
-        # Add new features
         cleaned_data = extract_sets_reps_features(cleaned_data)
-        
-        # Debug: Print columns after extracting sets and reps
         print("Columns after extract_sets_reps_features:", cleaned_data.columns.tolist())
-        
         cleaned_data = add_exercise_complexity(cleaned_data)
-        
-        # Debug: Print columns after adding exercise complexity
         print("Columns after add_exercise_complexity:", cleaned_data.columns.tolist())
-        
-        # Encode features
         encoded_data, _, _, _ = encode_features(cleaned_data)
-        
-        # Debug: Print columns after encoding
         print("Columns after encoding:", encoded_data.columns.tolist())
-        
-        # Prepare features
         X, y = prepare_features(encoded_data)
-        
-        # Debug: Print shape of X
         print(f"Shape of X before splitting: {X.shape}")
-        
-        # Train and evaluate models
         best_model, results = train_models(X, y)

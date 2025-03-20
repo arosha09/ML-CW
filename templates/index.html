@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout Predictor</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script>
         function validateForm() {
             var age = document.getElementById("age").value;
@@ -18,58 +19,64 @@
     </script>
 </head>
 <body>
-    <h1>Workout Predictor</h1>
-    <form method="POST" onsubmit="return validateForm()">
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" required><br>
+    <div class="container">
+        <h1>Workout Predictor</h1>
+        <form method="POST" onsubmit="return validateForm()">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
 
-        <label for="weight">Weight:</label>
-        <input type="number" id="weight" name="weight" required><br>
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" name="weight" required><br>
 
-        <label for="level">Level:</label>
-        <select id="level" name="level">
-            <option value="easy">Easy</option>
-            <option value="intermediate">Intermediate</option>
-            <option value="hard">Hard</option>
-        </select><br>
+            <label for="level">Fitness Level:</label>
+            <select id="level" name="level">
+                <option value="easy">Easy</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="hard">Hard</option>
+            </select><br>
 
-        <label for="days">Number of Days:</label>
-        <select id="days" name="days">
-            <option value="2">2</option>
-            <option value="3">3</option>
-        </select><br>
+            <label for="days">Number of Days:</label>
+            <select id="days" name="days">
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select><br>
 
-        <label for="include_core">Include Core Exercises:</label>
-        <input type="checkbox" id="include_core" name="include_core"><br>
+            <label for="include_core">Include Core Exercises:</label>
+            <input type="checkbox" id="include_core" name="include_core"><br>
 
-        <input type="submit" value="Predict Workout">
-    </form>
+            <input type="submit" value="Predict Workout">
+        </form>
 
-    {% if error_message %}
-        <div class="error">{{ error_message }}</div>
-    {% endif %}
+        {% if error_message %}
+            <div class="error">{{ error_message }}</div>
+        {% endif %}
 
-    {% if workout_plan %}
-        <h2>Recommended Workout Plan:</h2>
-        {% for day in workout_plan %}
-            <h3>Day {{ day.Day }}:</h3>
-            {% for muscle_group, exercises in day.Exercises.items() %}
-                <h4>{{ muscle_group }}:</h4>
-                <ul>
-                    {% for exercise in exercises %}
-                        <li>{{ exercise.Name }} ({{ exercise.Body_Part }}, {{ exercise.Equipment }}): {{ exercise.Sets_and_Reps }}</li>
-                    {% endfor %}
-                </ul>
-            {% endfor %}
-            {% if day.Core_Exercises %}
-                <h4>Optional Core Exercises:</h4>
-                <ul>
-                    {% for exercise in day.Core_Exercises %}
-                        <li>{{ exercise.Name }} ({{ exercise.Body_Part }}, {{ exercise.Equipment }}): {{ exercise.Sets_and_Reps }}</li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-        {% endfor %}
-    {% endif %}
+        {% if workout_plan %}
+            <h2>Recommended Workout Plan:</h2>
+            <div class="workout-plan">
+                {% for day in workout_plan %}
+                    <div class="workout-card">
+                        <h3>Day {{ day.Day }}:</h3>
+                        {% for muscle_group, exercises in day.Exercises.items() %}
+                            <h4>{{ muscle_group }}:</h4>
+                            <ul>
+                                {% for exercise in exercises %}
+                                    <li>{{ exercise.Name }} ({{ exercise.Body_Part }}, {{ exercise.Equipment }}): {{ exercise.Sets_and_Reps }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endfor %}
+                        {% if day.Core_Exercises %}
+                            <h4>Optional Core Exercises:</h4>
+                            <ul>
+                                {% for exercise in day.Core_Exercises %}
+                                    <li>{{ exercise.Name }} ({{ exercise.Body_Part }}, {{ exercise.Equipment }}): {{ exercise.Sets_and_Reps }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
 </body>
 </html>
