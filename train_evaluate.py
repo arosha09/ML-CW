@@ -73,7 +73,7 @@ if __name__ == "__main__":
     data = load_data('data/cleaned.csv')
     if data is not None:
         cleaned_data = clean_data(data)
-        encoded_data, _, _, _ = encode_features(cleaned_data)
+        encoded_data, _, _, _, _ = encode_features(cleaned_data)
         X, y = prepare_features(encoded_data)
 
         # Train and evaluate models
