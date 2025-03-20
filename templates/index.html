@@ -27,6 +27,9 @@
             <option value="3">3</option>
         </select><br>
 
+        <label for="include_core">Include Core Exercises:</label>
+        <input type="checkbox" id="include_core" name="include_core"><br>
+
         <input type="submit" value="Predict Workout">
     </form>
 
@@ -34,11 +37,22 @@
         <h2>Recommended Workout Plan:</h2>
         {% for day in workout_plan %}
             <h3>Day {{ day.Day }}:</h3>
-            <ul>
-                {% for exercise in day.Exercises %}
-                    <li>{{ exercise.Name }} ({{ exercise.Body_Part }}, {{ exercise.Equipment }}): {{ exercise.Sets_and_Reps }}</li>
-                {% endfor %}
-            </ul>
+            {% for muscle_group, exercises in day.Exercises.items() %}
+                <h4>{{ muscle_group }}:</h4>
+                <ul>
+                    {% for exercise in exercises %}
+                        <li>{{ exercise.Name }} ({{ exercise.Body_Part }}, {{ exercise.Equipment }}): {{ exercise.Sets_and_Reps }}</li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+            {% if day.Core_Exercises %}
+                <h4>Optional Core Exercises:</h4>
+                <ul>
+                    {% for exercise in day.Core_Exercises %}
+                        <li>{{ exercise.Name }} ({{ exercise.Body_Part }}, {{ exercise.Equipment }}): {{ exercise.Sets_and_Reps }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
         {% endfor %}
     {% endif %}
 </body>
