@@ -1,41 +1,49 @@
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
-import joblib
+import pickle
 
-# Load cleaned data
-abdominals_data = pd.read_csv('data/cleaned_abdominals.csv')
+def encode_features(data):
+    """
+    Encode categorical variables and save the encoders.
+    Returns the transformed dataset and the encoders.
+    """
+    # Initialize label encoders
+    le_body_part = LabelEncoder()
+    le_equipment = LabelEncoder()
+    le_level = LabelEncoder()
 
-# Simulate user data
-np.random.seed(42)
-n_samples = 1000
-user_data = pd.DataFrame({
-    'Age': np.random.randint(18, 60, n_samples),
-    'Weight': np.random.uniform(50, 120, n_samples),
-    'Goal': np.random.choice(['Weight Loss', 'Muscle Gain', 'Endurance'], n_samples)
-})
-user_exercises = user_data.copy()
-user_exercises['Exercise'] = np.random.choice(abdominals_data['Title'], n_samples)
+    # Encode categorical columns
+    data['Body Part/Muscle'] = le_body_part.fit_transform(data['Body Part/Muscle'])
+    data['Equipment'] = le_equipment.fit_transform(data['Equipment'])
+    data['Level'] = le_level.fit_transform(data['Level'])
 
-# Merge with exercise data
-dataset = user_exercises.merge(abdominals_data, left_on='Exercise', right_on='Title', how='left')
+    # Save the encoders for later use in the web app
+    with open('models/le_body_part.pkl', 'wb') as f:
+        pickle.dump(le_body_part, f)
+    with open('models/le_equipment.pkl', 'wb') as f:
+        pickle.dump(le_equipment, f)
+    with open('models/le_level.pkl', 'wb') as f:
+        pickle.dump(le_level, f)
 
-# Encode categorical variables
-le_equipment = LabelEncoder()
-le_level = LabelEncoder()
-le_goal = LabelEncoder()
+    print("Feature encoding completed.")
+    return data, le_body_part, le_equipment, le_level
 
-dataset['Equipment'] = le_equipment.fit_transform(dataset['Equipment'])
-dataset['Level'] = le_level.fit_transform(dataset['Level'])
-dataset['Goal'] = le_goal.fit_transform(dataset['Goal'])
+def prepare_features(data):
+    """
+    Prepare features (X) and target (y) for model training.
+    """
+    X = data[['Body Part/Muscle', 'Equipment', 'Level']]
+    y = data['Exercise Name']
+    return X, y
 
-# Define features and target
-X = dataset[['Age', 'Weight', 'Goal', 'Equipment', 'Level']]
-y = dataset['Title']
-
-# Save processed data and encoders
-dataset.to_csv('data/processed_data.csv', index=False)
-joblib.dump(le_equipment, 'models/le_equipment.pkl')
-joblib.dump(le_level, 'models/le_level.pkl')
-joblib.dump(le_goal, 'models/le_goal.pkl')
-print("Processed data and encoders saved")
+if __name__ == "__main__":
+    # Test the functions
+    data = pd.read_csv('data/cleaned.csv')
+    if data is not None:
+        encoded_data, _, _, _ = encode_features(data)
+        X, y = prepare_features(encoded_data)
+        print("Features (X):")
+        print(X.head())
+        print("Target (y):")
+        print(y.head())

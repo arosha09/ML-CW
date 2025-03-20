@@ -2,65 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout Recommender</title>
+    <title>Workout Generator</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>Personalized Abdominal Workout Recommender</h1>
-        <p>Enter your details below to get a tailored exercise recommendation!</p>
+    <h1>Workout Plan Generator</h1>
+    <form method="POST" action="/generate">
+        <label for="body_part">Target Body Part:</label>
+        <select name="body_part" id="body_part">
+            {% for part in body_parts %}
+                <option value="{{ part }}">{{ part }}</option>
+            {% endfor %}
+        </select><br><br>
 
-        <form method="POST" class="input-form">
-            <div class="form-group">
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" min="18" max="100" required placeholder="e.g., 30">
-            </div>
+        <label for="equipment">Equipment Available:</label>
+        <select name="equipment" id="equipment">
+            {% for eq in equipment %}
+                <option value="{{ eq }}">{{ eq }}</option>
+            {% endfor %}
+        </select><br><br>
 
-            <div class="form-group">
-                <label for="weight">Weight (kg):</label>
-                <input type="number" step="0.1" id="weight" name="weight" min="30" max="200" required placeholder="e.g., 70.5">
-            </div>
+        <label for="level">Fitness Level:</label>
+        <select name="level" id="level">
+            {% for lvl in levels %}
+                <option value="{{ lvl }}">{{ lvl }}</option>
+            {% endfor %}
+        </select><br><br>
 
-            <div class="form-group">
-                <label for="equipment">Equipment:</label>
-                <select id="equipment" name="equipment" required>
-                    <option value="" disabled selected>Select equipment</option>
-                    {% for option in equipment_options %}
-                        <option value="{{ option }}">{{ option }}</option>
-                    {% endfor %}
-                </select>
-            </div>
+        <input type="submit" value="Generate Workout">
+    </form>
 
-            <div class="form-group">
-                <label for="level">Fitness Level:</label>
-                <select id="level" name="level" required>
-                    <option value="" disabled selected>Select level</option>
-                    {% for option in level_options %}
-                        <option value="{{ option }}">{{ option }}</option>
-                    {% endfor %}
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="goal">Fitness Goal:</label>
-                <select id="goal" name="goal" required>
-                    <option value="" disabled selected>Select goal</option>
-                    {% for option in goal_options %}
-                        <option value="{{ option }}">{{ option }}</option>
-                    {% endfor %}
-                </select>
-            </div>
-
-            <button type="submit">Get Recommendation</button>
-        </form>
-
-        {% if recommendation %}
-            <div class="recommendation">
-                <h2>Your Recommended Exercise:</h2>
-                <p>{{ recommendation }}</p>
-            </div>
-        {% endif %}
-    </div>
+    {% if workout %}
+    <h2>Your Workout Plan</h2>
+    <p>Targeting: {{ body_part }} | Equipment: {{ equipment }} | Level: {{ level }}</p>
+    <table>
+        <tr>
+            <th>Exercise Name</th>
+            <th>Body Part/Muscle</th>
+            <th>Equipment</th>
+            <th>Sets and Reps</th>
+        </tr>
+        {% for exercise in workout %}
+        <tr>
+            <td>{{ exercise['Exercise Name'] }}</td>
+            <td>{{ exercise['Body Part/Muscle'] }}</td>
+            <td>{{ exercise['Equipment'] }}</td>
+            <td>{{ exercise['Sets and Reps'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
 </body>
 </html>
