@@ -1,207 +1,207 @@
-Exercise Name,Body Part/Muscle,Equipment,Level,Sets and Reps,Level_Encoded,Body Part/Muscle_Encoded,Equipment_Encoded,Age,Weight
-Push-Up,Chest,Bodyweight,easy,3 sets of 10-15,0,3,3,34,96.6301396568254
-Squat,Quads,Bodyweight,easy,3 sets of 12-15,0,12,3,58,68.32565375152078
-Plank,Core,Bodyweight,easy,3 sets of 30-60,0,4,3,34,88.76309070644753
-Lunges,Quads,Bodyweight,easy,3 sets of 10-12 per leg,0,12,3,39,105.96802246106316
-Mountain Climbers,Core,Bodyweight,easy,3 sets of 20-30,0,4,3,47,98.42038541400359
-Tricep Dips,Triceps,Bodyweight,easy,3 sets of 10-12,0,15,3,50,96.26205239688989
-Bicycle Crunches,Core,Bodyweight,easy,3 sets of 15-20,0,4,3,30,108.73229022495597
-Wall Sit,Quads,Bodyweight,easy,3 sets of 30-60,0,12,3,35,105.43127445656359
-Calf Raises,Calves,Bodyweight,easy,3 sets of 15-20,0,2,3,55,88.45583712272955
-Glute Bridge,Glutes,Bodyweight,easy,3 sets of 12-15,0,8,3,24,94.42809659807088
-Dumbbell Bench Press,Chest,Dumbbells,intermediate,3 sets of 8-12,2,3,7,43,80.72854797769791
-Dumbbell Squat,Quads,Dumbbells,intermediate,3 sets of 10-12,2,12,7,22,97.05520968272184
-Bent-Over Row,Back,Dumbbells,intermediate,3 sets of 8-12,2,0,7,50,87.4336771171521
-Shoulder Press,Shoulders,Dumbbells,intermediate,3 sets of 8-12,2,13,7,54,119.09471272016698
-Dumbbell Deadlift,Hamstrings,Dumbbells,intermediate,3 sets of 10-12,2,9,7,47,107.32303411593364
-Bicep Curl,Biceps,Dumbbells,intermediate,3 sets of 10-12,2,1,7,49,113.91586752164108
-Tricep Extension,Triceps,Dumbbells,intermediate,3 sets of 10-12,2,15,7,33,90.03392155644775
-Russian Twist,Core,Dumbbells,intermediate,3 sets of 15-20,2,4,7,39,87.90886082184647
-Goblet Squat,Quads,Dumbbells,intermediate,3 sets of 10-12,2,12,7,31,56.62015579709522
-Dumbbell Lunge,Quads,Dumbbells,intermediate,3 sets of 8-12 per leg,2,12,7,23,104.29374570698613
-Barbell Bench Press,Chest,Barbell,hard,4 sets of 6-10,1,3,0,58,85.99625932678671
-Barbell Squat,Quads,Barbell,hard,4 sets of 6-10,1,12,0,54,119.55002686709415
-Deadlift,Hamstrings,Barbell,hard,4 sets of 6-8,1,9,0,44,106.33213282901804
-Barbell Row,Back,Barbell,hard,4 sets of 6-10,1,0,0,41,75.28972314938467
-Overhead Press,Shoulders,Barbell,hard,4 sets of 6-8,1,13,0,38,111.10781560341242
-Barbell Curl,Biceps,Barbell,intermediate,3 sets of 8-12,2,1,0,57,62.55993533748633
-Barbell Hip Thrust,Glutes,Barbell,intermediate,3 sets of 10-12,2,8,0,43,88.4337612575925
-Pull-Up,Back,Pull-Up Bar,intermediate,3 sets of 6-10,2,0,17,55,116.64753092313131
-Chin-Up,Biceps,Pull-Up Bar,intermediate,3 sets of 6-10,2,1,17,57,55.2667992512488
-Hanging Leg Raise,Core,Pull-Up Bar,intermediate,3 sets of 12-15,2,4,17,58,119.05878024074457
-Kettlebell Swing,Glutes,Kettlebell,intermediate,3 sets of 15-20,2,8,11,50,60.091618564937505
-Kettlebell Goblet Squat,Quads,Kettlebell,intermediate,3 sets of 10-12,2,12,11,23,55.461926300791795
-Kettlebell Snatch,Full Body,Kettlebell,hard,4 sets of 8-12,1,7,11,45,85.38845950371793
-Kettlebell Clean,Full Body,Kettlebell,hard,4 sets of 8-12,1,7,11,35,54.85509075867326
-Burpee,Full Body,Bodyweight,intermediate,3 sets of 10-15,2,7,3,26,102.00606731066716
-Jump Squat,Quads,Bodyweight,intermediate,3 sets of 12-15,2,12,3,39,78.7945269834348
-Box Jump,Quads,Box,intermediate,3 sets of 10-12,2,12,4,30,71.83637487194636
-Incline Push-Up,Chest,Bodyweight,easy,3 sets of 10-15,0,3,3,38,52.00411450284479
-Side Plank,Core,Bodyweight,easy,3 sets of 30-45 per side,0,4,3,58,77.24543024079999
-Step-Up,Quads,Step/Bench,intermediate,3 sets of 10-12 per leg,2,12,19,57,82.61526243126958
-Lat Pulldown,Back,Lat Pulldown Machine,intermediate,3 sets of 8-12,2,0,12,53,101.51907732819728
-Leg Press,Quads,Leg Press Machine,intermediate,3 sets of 10-12,2,12,13,49,53.96953609560355
-Seated Row,Back,Cable Machine,intermediate,3 sets of 8-12,2,0,5,43,56.304914188697445
-Cable Fly,Chest,Cable Machine,intermediate,3 sets of 10-12,2,3,5,37,69.8939243539578
-Face Pull,Shoulders,Cable Machine,intermediate,3 sets of 10-12,2,13,5,24,95.6812553285147
-Cable Crunch,Core,Cable Machine,intermediate,3 sets of 15-20,2,4,5,24,106.93684548679599
-Romanian Deadlift,Hamstrings,Barbell,hard,4 sets of 6-10,1,9,0,54,93.36723513833346
-Front Squat,Quads,Barbell,hard,4 sets of 6-10,1,12,0,47,68.59055168135424
-Power Clean,Full Body,Barbell,hard,4 sets of 5-8,1,7,0,34,108.21725893483334
-Snatch,Full Body,Barbell,hard,4 sets of 5-8,1,7,0,31,69.40725825322949
-Thruster,Full Body,Barbell,hard,4 sets of 8-12,1,7,0,27,50.36031471724535
-Dumbbell Fly,Chest,Dumbbells,intermediate,3 sets of 10-12,2,3,7,21,111.1007991234236
-Arnold Press,Shoulders,Dumbbells,intermediate,3 sets of 8-12,2,13,7,20,69.90554460595195
-Hammer Curl,Biceps,Dumbbells,intermediate,3 sets of 10-12,2,1,7,53,110.78396728656506
-Skull Crusher,Triceps,Dumbbells,intermediate,3 sets of 10-12,2,15,7,33,57.41306453316834
-Single-Leg Deadlift,Hamstrings,Dumbbells,intermediate,3 sets of 8-12 per leg,2,9,7,29,114.53119465162195
-Farmer’s Carry,Full Body,Dumbbells,intermediate,3 sets of 30-60,2,7,7,25,74.40651666738222
-Side Lunge,Quads,Bodyweight,intermediate,3 sets of 10-12 per side,2,12,3,42,80.9266822027163
-Reverse Crunch,Core,Bodyweight,easy,3 sets of 15-20,0,4,3,48,116.15251867169953
-Superman,Lower Back,Bodyweight,easy,3 sets of 12-15,0,11,3,32,83.41085613141722
-High Knees,Core,Bodyweight,easy,3 sets of 20-30,0,4,3,57,80.69502246546682
-Jumping Jacks,Full Body,Bodyweight,easy,3 sets of 30-50,0,7,3,48,63.56910802106783
-Handstand Push-Up,Shoulders,Bodyweight,hard,4 sets of 5-10,1,13,3,34,95.0934315006943
-Pistol Squat,Quads,Bodyweight,hard,4 sets of 5-8 per leg,1,12,3,57,109.31628565716676
-Muscle-Up,Back,Pull-Up Bar,hard,4 sets of 5-8,1,0,17,53,88.37716406703464
-Toes-to-Bar,Core,Pull-Up Bar,hard,4 sets of 10-15,1,4,17,24,93.51384427606216
-One-Arm Pull-Up,Back,Pull-Up Bar,hard,4 sets of 3-5 per arm,1,0,17,32,100.0319193523857
-Decline Push-Up,Chest,Bodyweight,intermediate,3 sets of 10-15,2,3,3,28,109.4879512984005
-Bulgarian Split Squat,Quads,Dumbbells,intermediate,3 sets of 8-12 per leg,2,12,7,29,50.363087626543006
-Chest Dip,Chest,Parallel Bars,intermediate,3 sets of 8-12,2,3,16,28,83.74327390978482
-Reverse Fly,Shoulders,Dumbbells,intermediate,3 sets of 10-12,2,13,7,51,117.96362621618178
-Plank with Shoulder Tap,Core,Bodyweight,intermediate,3 sets of 20-30 taps,2,4,3,41,85.60550597169988
-Wall Ball,Full Body,Medicine Ball,intermediate,3 sets of 12-15,2,7,15,59,56.28776713523598
-Medicine Ball Slam,Core,Medicine Ball,intermediate,3 sets of 15-20,2,4,15,34,87.4652616407085
-Battle Rope,Full Body,Battle Rope,intermediate,3 sets of 30-60,2,7,1,29,80.38562580623018
-Sled Push,Full Body,Sled,hard,4 sets of 20-30 meters,1,7,18,50,78.20577463206223
-Sled Pull,Back,Sled,hard,4 sets of 20-30 meters,1,0,18,24,72.92720996275855
-Tire Flip,Full Body,Tire,hard,4 sets of 8-12,1,7,20,35,76.86507171376438
-Clap Push-Up,Chest,Bodyweight,hard,4 sets of 8-12,1,3,3,57,99.56825730616109
-L-Sit,Core,Parallel Bars,hard,4 sets of 20-30,1,4,16,33,56.601435509332916
-Dragon Flag,Core,Bodyweight,hard,4 sets of 8-12,1,4,3,27,107.08640194953337
-Nordic Hamstring Curl,Hamstrings,Bodyweight,hard,4 sets of 6-10,1,9,3,18,98.14150577628705
-Single-Leg Calf Raise,Calves,Bodyweight,intermediate,3 sets of 12-15 per leg,2,2,3,28,69.9971918298743
-Seated Calf Raise,Calves,Machine,intermediate,3 sets of 12-15,2,2,14,27,75.9308063611082
-Lateral Raise,Shoulders,Dumbbells,intermediate,3 sets of 10-12,2,13,7,41,86.89825116251986
-Front Raise,Shoulders,Dumbbells,intermediate,3 sets of 10-12,2,13,7,37,106.5333740973779
-Shrug,Traps,Dumbbells,intermediate,3 sets of 12-15,2,14,7,20,119.04571525632213
-Concentration Curl,Biceps,Dumbbells,intermediate,3 sets of 10-12,2,1,7,20,72.14472854615944
-Kickback,Triceps,Dumbbells,intermediate,3 sets of 10-12,2,15,7,25,94.75454476221478
-Hip Abduction,Glutes,Machine,intermediate,3 sets of 12-15,2,8,14,19,62.347381071918385
-Hip Adduction,Inner Thighs,Machine,intermediate,3 sets of 12-15,2,10,14,37,63.258895612104
-Leg Curl,Hamstrings,Machine,intermediate,3 sets of 10-12,2,9,14,49,104.8031353188274
-Leg Extension,Quads,Machine,intermediate,3 sets of 10-12,2,12,14,53,61.503881741067474
-Incline Bench Press,Chest,Barbell,hard,4 sets of 6-10,1,3,0,49,96.76860226610268
-Sumo Deadlift,Hamstrings,Barbell,hard,4 sets of 6-10,1,9,0,19,112.25919891879076
-Clean and Jerk,Full Body,Barbell,hard,4 sets of 5-8,1,7,0,58,84.99839384830497
-Overhead Squat,Quads,Barbell,hard,4 sets of 6-10,1,12,0,24,87.74861280151833
-Weighted Pull-Up,Back,Pull-Up Bar,hard,4 sets of 6-10,1,0,17,30,115.36775958778735
-Weighted Dip,Chest,Parallel Bars,hard,4 sets of 6-10,1,3,16,52,111.9242517556008
-Forearm Plank,Core,Bodyweight,easy,3 x 30-60,0,4,3,19,107.13211891622669
-Bench Dip,Triceps,Bench,easy,3 x 10-15,0,15,2,20,75.53407665221492
-Scissor Kicks,Core (Lower Abs),Bodyweight,easy,3 x 20-30,0,5,3,49,100.49600823233342
-Isometric Squat Hold,Quads,Bodyweight,easy,3 x 30-60,0,12,3,51,89.91640846767541
-Standing Calf Raise,Calves,Bodyweight,easy,3 x 15-20,0,2,3,56,113.70956324707592
-Single-Leg Glute Bridge,Glutes,Bodyweight,intermediate,3 x 10-12 per leg,2,8,3,50,83.45273892905264
-Dumbbell Front Squat,Quads,Dumbbells,intermediate,3 x 10-12,2,12,7,21,109.01290318606974
-Dumbbell Lateral Press,Shoulders,Dumbbells,intermediate,3 x 10-12,2,13,7,19,75.12389699736758
-Dumbbell Stiff-Leg Deadlift,Hamstrings,Dumbbells,intermediate,3 x 10-12,2,9,7,35,112.1527904098746
-Alternating Dumbbell Curl,Biceps,Dumbbells,easy,3 x 10-12 per arm,0,1,7,33,79.0189972013714
-Overhead Tricep Extension,Triceps,Dumbbell,intermediate,3 x 10-12,2,15,6,53,85.64285071011916
-Weighted Russian Twist,Core (Obliques),Dumbbell,intermediate,3 x 20-30,2,6,6,32,64.76570346780804
-Pendlay Row,Back,Barbell,hard,4 x 6-10,1,0,0,42,65.82340683099453
-Push Press,Shoulders,Barbell,hard,4 x 6-8,1,13,0,28,109.21387236421768
-EZ Bar Curl,Biceps,EZ Bar,intermediate,3 x 8-12,2,1,8,27,94.54003653083927
-Barbell Glute Bridge,Glutes,Barbell,intermediate,3 x 10-12,2,8,0,55,53.403280136244
-Wide-Grip Pull-Up,Back,Pull-Up Bar,hard,3 x 6-10,1,0,17,24,67.78309048686438
-Hanging Knee Raise,Core (Lower Abs),Pull-Up Bar,intermediate,3 x 12-15,2,5,17,21,114.7527824003845
-Kettlebell Front Squat,Quads,Kettlebell,intermediate,3 x 10-12,2,12,11,43,111.90594907356537
-Kettlebell Turkish Get-Up,Full Body,Kettlebell,hard,3 x 5-8 per side,1,7,11,55,84.85608609593298
-Kettlebell Press,Shoulders,Kettlebell,intermediate,3 x 10-12,2,13,11,42,114.15662201086609
-Split Squat Jump,Quads,Bodyweight,intermediate,3 x 12-15 per leg,2,12,3,33,76.61364079888287
-Plank with Leg Lift,Core,Bodyweight,intermediate,3 x 20-30 per leg,2,4,3,48,75.56671745268781
-Wide-Grip Lat Pulldown,Back,Lat Pulldown Machine,intermediate,3 x 8-12,2,0,12,32,86.8828739134317
-Hack Squat,Quads,Hack Squat Machine,intermediate,3 x 10-12,2,12,9,35,112.4023019427531
-Cable Reverse Row,Back,Cable Machine,intermediate,3 x 10-12,2,0,5,20,66.30349599520531
-Cable Chest Press,Chest,Cable Machine,intermediate,3 x 10-12,2,3,5,19,83.55726760166988
-Rear Delt Cable Fly,Shoulders,Cable Machine,intermediate,3 x 12-15,2,13,5,49,56.75110667018489
-Weighted Cable Crunch,Core,Cable Machine,intermediate,3 x 15-20,2,4,5,57,93.76606964518602
-Barbell Stiff-Leg Deadlift,Hamstrings,Barbell,hard,4 x 6-10,1,9,0,32,112.34536137497727
-Hang Clean,Full Body,Barbell,hard,4 x 5-8,1,7,0,25,109.80681800430216
-Barbell Snatch,Full Body,Barbell,hard,4 x 5-8,1,7,0,45,83.79246138026804
-Dumbbell Thruster,Full Body,Dumbbells,hard,3 x 10-12,1,7,7,58,96.62239079343196
-Seated Dumbbell Press,Shoulders,Dumbbells,intermediate,3 x 8-12,2,13,7,32,50.12202693941331
-Reverse Grip Dumbbell Curl,Biceps,Dumbbells,intermediate,3 x 10-12,2,1,7,30,101.59212486428868
-Dumbbell Tricep Kickback,Triceps,Dumbbells,easy,3 x 12-15,0,15,7,53,51.825819703888904
-Single-Leg Romanian Deadlift,Hamstrings,Dumbbell,hard,3 x 8-12 per leg,1,9,6,23,108.95886502809631
-Decline Crunch,Core,Bodyweight,intermediate,3 x 15-20,2,4,3,38,65.70101496743129
-Prone Cobra,Lower Back,Bodyweight,easy,3 x 12-15,0,11,3,39,112.30943878185926
-Star Jump,Full Body,Bodyweight,intermediate,3 x 20-30,2,7,3,29,54.35719541486208
-Wall Handstand Push-Up,Shoulders,Bodyweight,hard,4 x 5-10,1,13,3,34,107.12663991206968
-Single-Leg Pistol Squat,Quads,Bodyweight,hard,4 x 5-8 per leg,1,12,3,41,96.61130856952191
-Hanging Windshield Wiper,Core (Obliques),Pull-Up Bar,hard,4 x 10-15,1,6,17,48,52.601079304747664
-Tricep Dip,Triceps,Parallel Bars,intermediate,3 x 8-12,2,15,16,40,106.39539458451473
-Dumbbell Rear Delt Raise,Shoulders,Dumbbells,intermediate,3 x 12-15,2,13,7,18,114.32034457214804
-Wall Ball Squat,Full Body,Medicine Ball,intermediate,3 x 12-15,2,7,15,41,103.2473121958175
-Medicine Ball Russian Twist,Core (Obliques),Medicine Ball,intermediate,3 x 20-30,2,6,15,18,72.85702949797437
-Double Under,Full Body,Jump Rope,intermediate,3 x 30-50,2,7,10,53,71.34252448916942
-Weighted Sled Push,Full Body,Sled,hard,4 x 20-30 meters,1,7,18,43,73.12210249164018
-Weighted Sled Pull,Back,Sled,hard,4 x 20-30 meters,1,0,18,41,72.45833891718131
-Tire Swing,Full Body,Tire,hard,4 x 8-12,1,7,20,33,110.4547377116538
-Explosive Push-Up,Chest,Bodyweight,hard,4 x 8-12,1,3,3,58,53.017671786684446
-Parallel Bar L-Sit,Core,Parallel Bars,hard,4 x 20-30,1,4,16,33,79.00484425397835
-Reverse Dragon Flag,Core,Bench,hard,4 x 8-12,1,4,2,55,96.49688524939774
-Kneeling Nordic Curl,Hamstrings,Bodyweight,hard,4 x 6-10,1,9,3,47,52.877644873946814
-Single-Leg Standing Calf Raise,Calves,Bodyweight,intermediate,3 x 12-15 per leg,2,2,3,33,56.993211829404686
-Standing Machine Calf Raise,Calves,Machine,intermediate,3 x 12-15,2,2,14,39,91.45508545954067
-Cable Lateral Raise,Shoulders,Cable Machine,intermediate,3 x 12-15,2,13,5,49,104.82505776000214
-Dumbbell Front Raise,Shoulders,Dumbbells,intermediate,3 x 10-12,2,13,7,58,116.13549714423125
-Barbell Shrug,Traps,Barbell,intermediate,3 x 12-15,2,14,0,36,78.24088452572046
-Spider Curl,Biceps,Dumbbells,intermediate,3 x 10-12,2,1,7,23,56.423610063836094
-Cable Tricep Overhead Extension,Triceps,Cable Machine,intermediate,3 x 10-12,2,15,5,30,108.64870391717434
-Hip Thrust Machine,Glutes,Machine,intermediate,3 x 12-15,2,8,14,24,53.88011347366297
-Inner Thigh Machine,Inner Thighs,Machine,intermediate,3 x 12-15,2,10,14,34,88.01811210928298
-Lying Leg Curl,Hamstrings,Machine,intermediate,3 x 10-12,2,9,14,21,97.36672494555424
-Quad Extension,Quads,Machine,intermediate,3 x 10-12,2,12,14,22,71.67285362903743
-Clean Pull,Full Body,Barbell,hard,4 x 5-8,1,7,0,49,107.68730991881401
-Plank Up-Down,Core,Bodyweight,intermediate,3 x 20-30,2,4,3,47,92.45582760783626
-Donkey Kick,Glutes,Bodyweight,easy,3 x 12-15 per leg,0,8,3,55,51.03370828475587
-Fire Hydrant,Glutes,Bodyweight,easy,3 x 12-15 per leg,0,8,3,55,102.70553732947153
-Dumbbell Side Bend,Core (Obliques),Dumbbell,intermediate,3 x 15-20 per side,2,6,6,54,84.41502011885628
-Cable Woodchopper,Core (Obliques),Cable Machine,intermediate,3 x 15-20 per side,2,6,5,33,50.37272252247795
-Barbell Landmine Press,Shoulders,Barbell,intermediate,3 x 10-12,2,13,0,26,98.90560021227961
-Landmine Squat,Quads,Barbell,intermediate,3 x 10-12,2,12,0,24,82.29693242966754
-Cable Kickback,Glutes,Cable Machine,intermediate,3 x 12-15 per leg,2,8,5,33,88.20849889387796
-Dumbbell Z-Press,Shoulders,Dumbbells,hard,3 x 8-12,1,13,7,27,118.78743235862872
-Cable Bicep Curl,Biceps,Cable Machine,intermediate,3 x 10-12,2,1,5,51,85.43025773047736
-Cable Tricep Pushdown,Triceps,Cable Machine,intermediate,3 x 12-15,2,15,5,22,67.42826545400143
-Single-Leg Box Squat,Quads,Box,hard,3 x 8-12 per leg,1,12,4,40,110.41849722937181
-Weighted Plank,Core,Weight Plate,intermediate,3 x 30-60,2,4,21,40,83.10856302893998
-Side Plank with Hip Dip,Core (Obliques),Bodyweight,intermediate,3 x 20-30 per side,2,6,3,19,83.13588278753524
-Dumbbell Clean,Full Body,Dumbbells,hard,3 x 8-12,1,7,7,26,87.8736768244394
-Barbell Rollout,Core,Barbell,hard,4 x 10-15,1,4,0,39,85.62881379278454
-Seated Leg Press,Quads,Leg Press Machine,intermediate,3 x 10-12,2,12,13,21,61.84777286650626
-Standing Cable Row,Back,Cable Machine,intermediate,3 x 10-12,2,0,5,41,85.6755494828657
-Incline Cable Fly,Chest,Cable Machine,intermediate,3 x 10-12,2,3,5,41,77.33721711157486
-Standing Face Pull,Shoulders,Cable Machine,intermediate,3 x 12-15,2,13,5,27,71.75394501970017
-Barbell Bench Pull,Back,Barbell,hard,4 x 6-10,1,0,0,20,104.29809886130175
-Weighted Superman,Lower Back,Weight Plate,intermediate,3 x 12-15,2,11,21,42,102.27201798906951
-Single-Arm Overhead Press,Shoulders,Dumbbell,hard,3 x 8-12 per arm,1,13,6,21,62.82165258776911
-Close-Grip Bench Press,Triceps,Barbell,hard,4 x 6-10,1,15,0,36,83.34541114802721
-Side Plank with Leg Raise,Core (Obliques),Bodyweight,intermediate,3 x 20-30 per side,2,6,3,28,73.67803462428586
-Dumbbell Romanian Deadlift,Hamstrings,Dumbbells,intermediate,3 x 10-12,2,9,7,29,108.41233493696588
-Cable Reverse Fly,Shoulders,Cable Machine,intermediate,3 x 12-15,2,13,5,21,102.42147581393554
-Single-Leg Hip Thrust,Glutes,Bench,intermediate,3 x 10-12 per leg,2,8,2,45,60.014472428345194
-Kneeling Cable Crunch,Core,Cable Machine,intermediate,3 x 15-20,2,4,5,31,70.36753032175152
-Dumbbell Arnold Press,Shoulders,Dumbbells,intermediate,3 x 10-12,2,13,7,24,72.23033603203439
-Weighted Burpee,Full Body,Dumbbells,hard,4 x 10-15,1,7,7,56,99.32624586075987
-Single-Arm Cable Row,Back,Cable Machine,intermediate,3 x 10-12 per arm,2,0,5,22,50.21378165958594
-Overhead Cable Tricep Extension,Triceps,Cable Machine,intermediate,3 x 12-15,2,15,5,29,80.25525882588444
-Weighted V-Up,Core,Weight Plate,intermediate,3 x 12-15,2,4,21,25,77.73727722279196
-Single-Leg Calf Raise with Dumbbell,Calves,Dumbbell,intermediate,3 x 12-15 per leg,2,2,6,35,79.80213456746736
-Cable Shoulder Press,Shoulders,Cable Machine,intermediate,3 x 10-12,2,13,5,55,81.84653119382614
-Decline Sit-Up,Core,Bench,intermediate,3 x 15-20,2,4,2,42,101.37237973893326
-Dumbbell Reverse Chop,Core (Obliques),Dumbbell,intermediate,3 x 15-20 per side,2,6,6,42,59.05173439534673
-Barbell Clean and Press,Full Body,Barbell,hard,4 x 5-8,1,7,0,54,90.24550735583082
-Single-Leg Plank,Core,Bodyweight,intermediate,3 x 30-45 per leg,2,4,3,49,82.23694605020391
+Exercise Name,Body Part/Muscle,Equipment,Level,Sets and Reps,Level_Encoded,Body Part/Muscle_Encoded,Equipment_Encoded,Number_of_Sets,Min_Reps,Max_Reps,Muscle_Group_Count,Is_Full_Body,Equipment_Complexity,Age,Weight
+Push-Up,Chest,Bodyweight,easy,3 sets of 10-15,0,3,3,3.0,10.0,15.0,1,0,1.0,46,61.761636822463586
+Squat,Quads,Bodyweight,easy,3 sets of 12-15,0,12,3,3.0,12.0,15.0,1,0,1.0,19,55.6980494418893
+Plank,Core,Bodyweight,easy,3 sets of 30-60,0,4,3,3.0,30.0,60.0,1,0,1.0,45,103.57745414737971
+Lunges,Quads,Bodyweight,easy,3 sets of 10-12 per leg,0,12,3,3.0,10.0,12.0,1,0,1.0,31,53.032194980864546
+Mountain Climbers,Core,Bodyweight,easy,3 sets of 20-30,0,4,3,3.0,20.0,30.0,1,0,1.0,20,76.41836423267296
+Tricep Dips,Triceps,Bodyweight,easy,3 sets of 10-12,0,15,3,3.0,10.0,12.0,1,0,1.0,24,100.4389416388207
+Bicycle Crunches,Core,Bodyweight,easy,3 sets of 15-20,0,4,3,3.0,15.0,20.0,1,0,1.0,25,98.51906348767194
+Wall Sit,Quads,Bodyweight,easy,3 sets of 30-60,0,12,3,3.0,30.0,60.0,1,0,1.0,22,96.17036320611423
+Calf Raises,Calves,Bodyweight,easy,3 sets of 15-20,0,2,3,3.0,15.0,20.0,1,0,1.0,46,60.87613381380048
+Glute Bridge,Glutes,Bodyweight,easy,3 sets of 12-15,0,8,3,3.0,12.0,15.0,1,0,1.0,58,118.5061159891134
+Dumbbell Bench Press,Chest,Dumbbells,intermediate,3 sets of 8-12,2,3,7,3.0,8.0,12.0,1,0,2.0,47,83.77015187785415
+Dumbbell Squat,Quads,Dumbbells,intermediate,3 sets of 10-12,2,12,7,3.0,10.0,12.0,1,0,2.0,59,74.70639618788503
+Bent-Over Row,Back,Dumbbells,intermediate,3 sets of 8-12,2,0,7,3.0,8.0,12.0,1,0,2.0,30,80.1654688210521
+Shoulder Press,Shoulders,Dumbbells,intermediate,3 sets of 8-12,2,13,7,3.0,8.0,12.0,1,0,2.0,46,57.39693673184358
+Dumbbell Deadlift,Hamstrings,Dumbbells,intermediate,3 sets of 10-12,2,9,7,3.0,10.0,12.0,1,0,2.0,46,51.281079551025854
+Bicep Curl,Biceps,Dumbbells,intermediate,3 sets of 10-12,2,1,7,3.0,10.0,12.0,1,0,2.0,44,74.31954575439714
+Tricep Extension,Triceps,Dumbbells,intermediate,3 sets of 10-12,2,15,7,3.0,10.0,12.0,1,0,2.0,28,50.54674061406472
+Russian Twist,Core,Dumbbells,intermediate,3 sets of 15-20,2,4,7,3.0,15.0,20.0,1,0,2.0,41,119.6450763399966
+Goblet Squat,Quads,Dumbbells,intermediate,3 sets of 10-12,2,12,7,3.0,10.0,12.0,1,0,2.0,35,92.11508928923257
+Dumbbell Lunge,Quads,Dumbbells,intermediate,3 sets of 8-12 per leg,2,12,7,3.0,8.0,12.0,1,0,2.0,36,52.92419358156955
+Barbell Bench Press,Chest,Barbell,hard,4 sets of 6-10,1,3,0,4.0,6.0,10.0,1,0,3.0,38,95.69698817109419
+Barbell Squat,Quads,Barbell,hard,4 sets of 6-10,1,12,0,4.0,6.0,10.0,1,0,3.0,22,114.61474233754336
+Deadlift,Hamstrings,Barbell,hard,4 sets of 6-8,1,9,0,4.0,6.0,8.0,1,0,3.0,49,86.11772715870359
+Barbell Row,Back,Barbell,hard,4 sets of 6-10,1,0,0,4.0,6.0,10.0,1,0,3.0,49,110.31636511760361
+Overhead Press,Shoulders,Barbell,hard,4 sets of 6-8,1,13,0,4.0,6.0,8.0,1,0,3.0,45,63.94285558545087
+Barbell Curl,Biceps,Barbell,intermediate,3 sets of 8-12,2,1,0,3.0,8.0,12.0,1,0,3.0,28,77.55836230750094
+Barbell Hip Thrust,Glutes,Barbell,intermediate,3 sets of 10-12,2,8,0,3.0,10.0,12.0,1,0,3.0,39,110.82029072313347
+Pull-Up,Back,Pull-Up Bar,intermediate,3 sets of 6-10,2,0,17,3.0,6.0,10.0,1,0,2.0,43,117.51336201444745
+Chin-Up,Biceps,Pull-Up Bar,intermediate,3 sets of 6-10,2,1,17,3.0,6.0,10.0,1,0,2.0,27,111.31459862085029
+Hanging Leg Raise,Core,Pull-Up Bar,intermediate,3 sets of 12-15,2,4,17,3.0,12.0,15.0,1,0,2.0,40,76.28393770558368
+Kettlebell Swing,Glutes,Kettlebell,intermediate,3 sets of 15-20,2,8,11,3.0,15.0,20.0,1,0,2.0,37,88.77865889794498
+Kettlebell Goblet Squat,Quads,Kettlebell,intermediate,3 sets of 10-12,2,12,11,3.0,10.0,12.0,1,0,2.0,38,116.03655606668714
+Kettlebell Snatch,Full Body,Kettlebell,hard,4 sets of 8-12,1,7,11,4.0,8.0,12.0,1,1,2.0,25,87.90859553153706
+Kettlebell Clean,Full Body,Kettlebell,hard,4 sets of 8-12,1,7,11,4.0,8.0,12.0,1,1,2.0,30,84.0403974746518
+Burpee,Full Body,Bodyweight,intermediate,3 sets of 10-15,2,7,3,3.0,10.0,15.0,1,1,1.0,56,97.75862790937273
+Jump Squat,Quads,Bodyweight,intermediate,3 sets of 12-15,2,12,3,3.0,12.0,15.0,1,0,1.0,27,116.90964123338401
+Box Jump,Quads,Box,intermediate,3 sets of 10-12,2,12,4,3.0,10.0,12.0,1,0,1.0,29,85.276251214651
+Incline Push-Up,Chest,Bodyweight,easy,3 sets of 10-15,0,3,3,3.0,10.0,15.0,1,0,1.0,53,65.09830217176837
+Side Plank,Core,Bodyweight,easy,3 sets of 30-45 per side,0,4,3,3.0,30.0,45.0,1,0,1.0,33,95.17825337894129
+Step-Up,Quads,Step/Bench,intermediate,3 sets of 10-12 per leg,2,12,19,3.0,10.0,12.0,1,0,1.0,25,104.2055669238355
+Lat Pulldown,Back,Lat Pulldown Machine,intermediate,3 sets of 8-12,2,0,12,3.0,8.0,12.0,1,0,2.0,34,97.60850589348102
+Leg Press,Quads,Leg Press Machine,intermediate,3 sets of 10-12,2,12,13,3.0,10.0,12.0,1,0,2.0,30,75.60522295569498
+Seated Row,Back,Cable Machine,intermediate,3 sets of 8-12,2,0,5,3.0,8.0,12.0,1,0,2.0,22,119.79507742404299
+Cable Fly,Chest,Cable Machine,intermediate,3 sets of 10-12,2,3,5,3.0,10.0,12.0,1,0,2.0,49,71.72335195565176
+Face Pull,Shoulders,Cable Machine,intermediate,3 sets of 10-12,2,13,5,3.0,10.0,12.0,1,0,2.0,34,86.31901936182881
+Cable Crunch,Core,Cable Machine,intermediate,3 sets of 15-20,2,4,5,3.0,15.0,20.0,1,0,2.0,39,113.82309544320607
+Romanian Deadlift,Hamstrings,Barbell,hard,4 sets of 6-10,1,9,0,4.0,6.0,10.0,1,0,3.0,44,91.66980825298538
+Front Squat,Quads,Barbell,hard,4 sets of 6-10,1,12,0,4.0,6.0,10.0,1,0,3.0,28,113.98574917634181
+Power Clean,Full Body,Barbell,hard,4 sets of 5-8,1,7,0,4.0,5.0,8.0,1,1,3.0,39,109.80663408044825
+Snatch,Full Body,Barbell,hard,4 sets of 5-8,1,7,0,4.0,5.0,8.0,1,1,3.0,41,71.13133549343476
+Thruster,Full Body,Barbell,hard,4 sets of 8-12,1,7,0,4.0,8.0,12.0,1,1,3.0,30,69.8473847325077
+Dumbbell Fly,Chest,Dumbbells,intermediate,3 sets of 10-12,2,3,7,3.0,10.0,12.0,1,0,2.0,29,58.01874055059366
+Arnold Press,Shoulders,Dumbbells,intermediate,3 sets of 8-12,2,13,7,3.0,8.0,12.0,1,0,2.0,43,93.3810605057979
+Hammer Curl,Biceps,Dumbbells,intermediate,3 sets of 10-12,2,1,7,3.0,10.0,12.0,1,0,2.0,50,118.32631112740972
+Skull Crusher,Triceps,Dumbbells,intermediate,3 sets of 10-12,2,15,7,3.0,10.0,12.0,1,0,2.0,23,69.63568408313114
+Single-Leg Deadlift,Hamstrings,Dumbbells,intermediate,3 sets of 8-12 per leg,2,9,7,3.0,8.0,12.0,1,0,2.0,53,51.30669175835286
+Farmer’s Carry,Full Body,Dumbbells,intermediate,3 sets of 30-60,2,7,7,3.0,30.0,60.0,1,1,2.0,54,97.78273868620367
+Side Lunge,Quads,Bodyweight,intermediate,3 sets of 10-12 per side,2,12,3,3.0,10.0,12.0,1,0,1.0,55,98.0139056398869
+Reverse Crunch,Core,Bodyweight,easy,3 sets of 15-20,0,4,3,3.0,15.0,20.0,1,0,1.0,35,116.80032456273165
+Superman,Lower Back,Bodyweight,easy,3 sets of 12-15,0,11,3,3.0,12.0,15.0,1,0,1.0,49,116.65264946114532
+High Knees,Core,Bodyweight,easy,3 sets of 20-30,0,4,3,3.0,20.0,30.0,1,0,1.0,56,114.75169878985753
+Jumping Jacks,Full Body,Bodyweight,easy,3 sets of 30-50,0,7,3,3.0,30.0,50.0,1,1,1.0,21,102.34706071112143
+Handstand Push-Up,Shoulders,Bodyweight,hard,4 sets of 5-10,1,13,3,4.0,5.0,10.0,1,0,1.0,40,87.78786889924905
+Pistol Squat,Quads,Bodyweight,hard,4 sets of 5-8 per leg,1,12,3,4.0,5.0,8.0,1,0,1.0,37,80.01014805824352
+Muscle-Up,Back,Pull-Up Bar,hard,4 sets of 5-8,1,0,17,4.0,5.0,8.0,1,0,2.0,42,75.04584612140184
+Toes-to-Bar,Core,Pull-Up Bar,hard,4 sets of 10-15,1,4,17,4.0,10.0,15.0,1,0,2.0,32,103.14711231714125
+One-Arm Pull-Up,Back,Pull-Up Bar,hard,4 sets of 3-5 per arm,1,0,17,4.0,3.0,5.0,1,0,2.0,40,71.57172412253918
+Decline Push-Up,Chest,Bodyweight,intermediate,3 sets of 10-15,2,3,3,3.0,10.0,15.0,1,0,1.0,30,67.08269785775119
+Bulgarian Split Squat,Quads,Dumbbells,intermediate,3 sets of 8-12 per leg,2,12,7,3.0,8.0,12.0,1,0,2.0,25,73.56581937603852
+Chest Dip,Chest,Parallel Bars,intermediate,3 sets of 8-12,2,3,16,3.0,8.0,12.0,1,0,2.0,21,110.38325469819435
+Reverse Fly,Shoulders,Dumbbells,intermediate,3 sets of 10-12,2,13,7,3.0,10.0,12.0,1,0,2.0,54,84.61151881235294
+Plank with Shoulder Tap,Core,Bodyweight,intermediate,3 sets of 20-30 taps,2,4,3,3.0,20.0,30.0,1,0,1.0,57,117.23244604255811
+Wall Ball,Full Body,Medicine Ball,intermediate,3 sets of 12-15,2,7,15,3.0,12.0,15.0,1,1,2.0,19,51.593250112672116
+Medicine Ball Slam,Core,Medicine Ball,intermediate,3 sets of 15-20,2,4,15,3.0,15.0,20.0,1,0,2.0,59,115.5414473156565
+Battle Rope,Full Body,Battle Rope,intermediate,3 sets of 30-60,2,7,1,3.0,30.0,60.0,1,1,1.0,20,55.172891338979824
+Sled Push,Full Body,Sled,hard,4 sets of 20-30 meters,1,7,18,4.0,20.0,30.0,1,1,3.0,48,76.22298894251811
+Sled Pull,Back,Sled,hard,4 sets of 20-30 meters,1,0,18,4.0,20.0,30.0,1,0,3.0,36,115.93836462099013
+Tire Flip,Full Body,Tire,hard,4 sets of 8-12,1,7,20,4.0,8.0,12.0,1,1,3.0,44,72.96310503354078
+Clap Push-Up,Chest,Bodyweight,hard,4 sets of 8-12,1,3,3,4.0,8.0,12.0,1,0,1.0,37,55.51129303171961
+L-Sit,Core,Parallel Bars,hard,4 sets of 20-30,1,4,16,4.0,20.0,30.0,1,0,2.0,22,97.7891712095699
+Dragon Flag,Core,Bodyweight,hard,4 sets of 8-12,1,4,3,4.0,8.0,12.0,1,0,1.0,35,78.88730314181167
+Nordic Hamstring Curl,Hamstrings,Bodyweight,hard,4 sets of 6-10,1,9,3,4.0,6.0,10.0,1,0,1.0,45,78.00624377961304
+Single-Leg Calf Raise,Calves,Bodyweight,intermediate,3 sets of 12-15 per leg,2,2,3,3.0,12.0,15.0,1,0,1.0,35,99.25674634421523
+Seated Calf Raise,Calves,Machine,intermediate,3 sets of 12-15,2,2,14,3.0,12.0,15.0,1,0,2.0,19,97.32387328903674
+Lateral Raise,Shoulders,Dumbbells,intermediate,3 sets of 10-12,2,13,7,3.0,10.0,12.0,1,0,2.0,42,103.0922206325345
+Front Raise,Shoulders,Dumbbells,intermediate,3 sets of 10-12,2,13,7,3.0,10.0,12.0,1,0,2.0,57,106.1214382283425
+Shrug,Traps,Dumbbells,intermediate,3 sets of 12-15,2,14,7,3.0,12.0,15.0,1,0,2.0,36,92.81937128153879
+Concentration Curl,Biceps,Dumbbells,intermediate,3 sets of 10-12,2,1,7,3.0,10.0,12.0,1,0,2.0,42,119.14892557779253
+Kickback,Triceps,Dumbbells,intermediate,3 sets of 10-12,2,15,7,3.0,10.0,12.0,1,0,2.0,55,97.07453487594542
+Hip Abduction,Glutes,Machine,intermediate,3 sets of 12-15,2,8,14,3.0,12.0,15.0,1,0,2.0,54,107.62753184166459
+Hip Adduction,Inner Thighs,Machine,intermediate,3 sets of 12-15,2,10,14,3.0,12.0,15.0,1,0,2.0,42,81.71689814641078
+Leg Curl,Hamstrings,Machine,intermediate,3 sets of 10-12,2,9,14,3.0,10.0,12.0,1,0,2.0,43,69.7917471096298
+Leg Extension,Quads,Machine,intermediate,3 sets of 10-12,2,12,14,3.0,10.0,12.0,1,0,2.0,43,101.81965354459129
+Incline Bench Press,Chest,Barbell,hard,4 sets of 6-10,1,3,0,4.0,6.0,10.0,1,0,3.0,26,66.37229313041324
+Sumo Deadlift,Hamstrings,Barbell,hard,4 sets of 6-10,1,9,0,4.0,6.0,10.0,1,0,3.0,26,63.04845724783542
+Clean and Jerk,Full Body,Barbell,hard,4 sets of 5-8,1,7,0,4.0,5.0,8.0,1,1,3.0,38,92.79958824438536
+Overhead Squat,Quads,Barbell,hard,4 sets of 6-10,1,12,0,4.0,6.0,10.0,1,0,3.0,32,50.603208961884135
+Weighted Pull-Up,Back,Pull-Up Bar,hard,4 sets of 6-10,1,0,17,4.0,6.0,10.0,1,0,2.0,34,62.212883865458224
+Weighted Dip,Chest,Parallel Bars,hard,4 sets of 6-10,1,3,16,4.0,6.0,10.0,1,0,2.0,31,70.70620516667817
+Forearm Plank,Core,Bodyweight,easy,3 x 30-60,0,4,3,3.0,30.0,60.0,1,0,1.0,41,69.13571745606858
+Bench Dip,Triceps,Bench,easy,3 x 10-15,0,15,2,3.0,10.0,15.0,1,0,1.0,28,66.39401468530575
+Scissor Kicks,Core (Lower Abs),Bodyweight,easy,3 x 20-30,0,5,3,3.0,20.0,30.0,1,0,1.0,31,112.61852804672472
+Isometric Squat Hold,Quads,Bodyweight,easy,3 x 30-60,0,12,3,3.0,30.0,60.0,1,0,1.0,42,83.37407951511894
+Standing Calf Raise,Calves,Bodyweight,easy,3 x 15-20,0,2,3,3.0,15.0,20.0,1,0,1.0,36,88.53602168424649
+Single-Leg Glute Bridge,Glutes,Bodyweight,intermediate,3 x 10-12 per leg,2,8,3,3.0,10.0,12.0,1,0,1.0,39,86.36995702837264
+Dumbbell Front Squat,Quads,Dumbbells,intermediate,3 x 10-12,2,12,7,3.0,10.0,12.0,1,0,2.0,42,61.7760910264692
+Dumbbell Lateral Press,Shoulders,Dumbbells,intermediate,3 x 10-12,2,13,7,3.0,10.0,12.0,1,0,2.0,53,113.67386158193327
+Dumbbell Stiff-Leg Deadlift,Hamstrings,Dumbbells,intermediate,3 x 10-12,2,9,7,3.0,10.0,12.0,1,0,2.0,47,62.626036851941755
+Alternating Dumbbell Curl,Biceps,Dumbbells,easy,3 x 10-12 per arm,0,1,7,3.0,10.0,12.0,1,0,2.0,45,52.826244495107716
+Overhead Tricep Extension,Triceps,Dumbbell,intermediate,3 x 10-12,2,15,6,3.0,10.0,12.0,1,0,1.0,34,79.61058364871695
+Weighted Russian Twist,Core (Obliques),Dumbbell,intermediate,3 x 20-30,2,6,6,3.0,20.0,30.0,1,0,1.0,23,72.51754507304794
+Pendlay Row,Back,Barbell,hard,4 x 6-10,1,0,0,3.0,6.0,10.0,1,0,3.0,50,77.54216247794272
+Push Press,Shoulders,Barbell,hard,4 x 6-8,1,13,0,3.0,6.0,8.0,1,0,3.0,33,114.49362813335888
+EZ Bar Curl,Biceps,EZ Bar,intermediate,3 x 8-12,2,1,8,3.0,8.0,12.0,1,0,2.0,35,106.921245475364
+Barbell Glute Bridge,Glutes,Barbell,intermediate,3 x 10-12,2,8,0,3.0,10.0,12.0,1,0,3.0,25,115.28672176485811
+Wide-Grip Pull-Up,Back,Pull-Up Bar,hard,3 x 6-10,1,0,17,3.0,6.0,10.0,1,0,2.0,36,57.72984129219526
+Hanging Knee Raise,Core (Lower Abs),Pull-Up Bar,intermediate,3 x 12-15,2,5,17,3.0,12.0,15.0,1,0,2.0,48,72.08964848810773
+Kettlebell Front Squat,Quads,Kettlebell,intermediate,3 x 10-12,2,12,11,3.0,10.0,12.0,1,0,2.0,27,74.90151351785954
+Kettlebell Turkish Get-Up,Full Body,Kettlebell,hard,3 x 5-8 per side,1,7,11,3.0,5.0,8.0,1,1,2.0,27,77.05161063917151
+Kettlebell Press,Shoulders,Kettlebell,intermediate,3 x 10-12,2,13,11,3.0,10.0,12.0,1,0,2.0,29,67.757360972046
+Split Squat Jump,Quads,Bodyweight,intermediate,3 x 12-15 per leg,2,12,3,3.0,12.0,15.0,1,0,1.0,59,94.89805031317258
+Plank with Leg Lift,Core,Bodyweight,intermediate,3 x 20-30 per leg,2,4,3,3.0,20.0,30.0,1,0,1.0,46,73.72515656285725
+Wide-Grip Lat Pulldown,Back,Lat Pulldown Machine,intermediate,3 x 8-12,2,0,12,3.0,8.0,12.0,1,0,2.0,51,97.20793770011677
+Hack Squat,Quads,Hack Squat Machine,intermediate,3 x 10-12,2,12,9,3.0,10.0,12.0,1,0,2.0,30,66.47475874198948
+Cable Reverse Row,Back,Cable Machine,intermediate,3 x 10-12,2,0,5,3.0,10.0,12.0,1,0,2.0,18,97.10004772292568
+Cable Chest Press,Chest,Cable Machine,intermediate,3 x 10-12,2,3,5,3.0,10.0,12.0,1,0,2.0,57,71.4422730807363
+Rear Delt Cable Fly,Shoulders,Cable Machine,intermediate,3 x 12-15,2,13,5,3.0,12.0,15.0,1,0,2.0,30,87.11571344859266
+Weighted Cable Crunch,Core,Cable Machine,intermediate,3 x 15-20,2,4,5,3.0,15.0,20.0,1,0,2.0,39,71.05418417759984
+Barbell Stiff-Leg Deadlift,Hamstrings,Barbell,hard,4 x 6-10,1,9,0,3.0,6.0,10.0,1,0,3.0,52,90.16238148887234
+Hang Clean,Full Body,Barbell,hard,4 x 5-8,1,7,0,3.0,5.0,8.0,1,1,3.0,34,111.33803180054647
+Barbell Snatch,Full Body,Barbell,hard,4 x 5-8,1,7,0,3.0,5.0,8.0,1,1,3.0,32,60.4773170615206
+Dumbbell Thruster,Full Body,Dumbbells,hard,3 x 10-12,1,7,7,3.0,10.0,12.0,1,1,2.0,28,76.85745950482129
+Seated Dumbbell Press,Shoulders,Dumbbells,intermediate,3 x 8-12,2,13,7,3.0,8.0,12.0,1,0,2.0,45,103.78923619400028
+Reverse Grip Dumbbell Curl,Biceps,Dumbbells,intermediate,3 x 10-12,2,1,7,3.0,10.0,12.0,1,0,2.0,50,76.90105436755981
+Dumbbell Tricep Kickback,Triceps,Dumbbells,easy,3 x 12-15,0,15,7,3.0,12.0,15.0,1,0,2.0,49,54.60694089673573
+Single-Leg Romanian Deadlift,Hamstrings,Dumbbell,hard,3 x 8-12 per leg,1,9,6,3.0,8.0,12.0,1,0,1.0,46,100.86664200574484
+Decline Crunch,Core,Bodyweight,intermediate,3 x 15-20,2,4,3,3.0,15.0,20.0,1,0,1.0,37,97.0062496845042
+Prone Cobra,Lower Back,Bodyweight,easy,3 x 12-15,0,11,3,3.0,12.0,15.0,1,0,1.0,54,66.44383883675982
+Star Jump,Full Body,Bodyweight,intermediate,3 x 20-30,2,7,3,3.0,20.0,30.0,1,1,1.0,29,52.14946522369828
+Wall Handstand Push-Up,Shoulders,Bodyweight,hard,4 x 5-10,1,13,3,3.0,5.0,10.0,1,0,1.0,27,69.36261355062409
+Single-Leg Pistol Squat,Quads,Bodyweight,hard,4 x 5-8 per leg,1,12,3,3.0,5.0,8.0,1,0,1.0,51,97.38181745105487
+Hanging Windshield Wiper,Core (Obliques),Pull-Up Bar,hard,4 x 10-15,1,6,17,3.0,10.0,15.0,1,0,2.0,27,65.90876845119804
+Tricep Dip,Triceps,Parallel Bars,intermediate,3 x 8-12,2,15,16,3.0,8.0,12.0,1,0,2.0,42,93.43466321802353
+Dumbbell Rear Delt Raise,Shoulders,Dumbbells,intermediate,3 x 12-15,2,13,7,3.0,12.0,15.0,1,0,2.0,41,119.87716977688477
+Wall Ball Squat,Full Body,Medicine Ball,intermediate,3 x 12-15,2,7,15,3.0,12.0,15.0,1,1,2.0,54,101.74391034584019
+Medicine Ball Russian Twist,Core (Obliques),Medicine Ball,intermediate,3 x 20-30,2,6,15,3.0,20.0,30.0,1,0,2.0,23,77.08814294302516
+Double Under,Full Body,Jump Rope,intermediate,3 x 30-50,2,7,10,3.0,30.0,50.0,1,1,1.0,26,71.61765531326087
+Weighted Sled Push,Full Body,Sled,hard,4 x 20-30 meters,1,7,18,3.0,20.0,30.0,1,1,3.0,35,90.44684147580891
+Weighted Sled Pull,Back,Sled,hard,4 x 20-30 meters,1,0,18,3.0,20.0,30.0,1,0,3.0,42,86.17340021879959
+Tire Swing,Full Body,Tire,hard,4 x 8-12,1,7,20,3.0,8.0,12.0,1,1,3.0,52,53.22544548389844
+Explosive Push-Up,Chest,Bodyweight,hard,4 x 8-12,1,3,3,3.0,8.0,12.0,1,0,1.0,44,93.24671640444433
+Parallel Bar L-Sit,Core,Parallel Bars,hard,4 x 20-30,1,4,16,3.0,20.0,30.0,1,0,2.0,34,75.23525162772324
+Reverse Dragon Flag,Core,Bench,hard,4 x 8-12,1,4,2,3.0,8.0,12.0,1,0,1.0,47,115.69812594723061
+Kneeling Nordic Curl,Hamstrings,Bodyweight,hard,4 x 6-10,1,9,3,3.0,6.0,10.0,1,0,1.0,43,78.01978626593896
+Single-Leg Standing Calf Raise,Calves,Bodyweight,intermediate,3 x 12-15 per leg,2,2,3,3.0,12.0,15.0,1,0,1.0,55,75.84741359159786
+Standing Machine Calf Raise,Calves,Machine,intermediate,3 x 12-15,2,2,14,3.0,12.0,15.0,1,0,2.0,43,60.59520133703664
+Cable Lateral Raise,Shoulders,Cable Machine,intermediate,3 x 12-15,2,13,5,3.0,12.0,15.0,1,0,2.0,52,107.57242809897534
+Dumbbell Front Raise,Shoulders,Dumbbells,intermediate,3 x 10-12,2,13,7,3.0,10.0,12.0,1,0,2.0,44,70.56477299488535
+Barbell Shrug,Traps,Barbell,intermediate,3 x 12-15,2,14,0,3.0,12.0,15.0,1,0,3.0,53,84.22983784500789
+Spider Curl,Biceps,Dumbbells,intermediate,3 x 10-12,2,1,7,3.0,10.0,12.0,1,0,2.0,26,82.10914164016026
+Cable Tricep Overhead Extension,Triceps,Cable Machine,intermediate,3 x 10-12,2,15,5,3.0,10.0,12.0,1,0,2.0,40,104.20934289930617
+Hip Thrust Machine,Glutes,Machine,intermediate,3 x 12-15,2,8,14,3.0,12.0,15.0,1,0,2.0,26,91.81754802978631
+Inner Thigh Machine,Inner Thighs,Machine,intermediate,3 x 12-15,2,10,14,3.0,12.0,15.0,1,0,2.0,55,80.96670419454544
+Lying Leg Curl,Hamstrings,Machine,intermediate,3 x 10-12,2,9,14,3.0,10.0,12.0,1,0,2.0,47,69.8759041748628
+Quad Extension,Quads,Machine,intermediate,3 x 10-12,2,12,14,3.0,10.0,12.0,1,0,2.0,34,81.22835226900338
+Clean Pull,Full Body,Barbell,hard,4 x 5-8,1,7,0,3.0,5.0,8.0,1,1,3.0,33,98.61043559123988
+Plank Up-Down,Core,Bodyweight,intermediate,3 x 20-30,2,4,3,3.0,20.0,30.0,1,0,1.0,28,84.59649501517521
+Donkey Kick,Glutes,Bodyweight,easy,3 x 12-15 per leg,0,8,3,3.0,12.0,15.0,1,0,1.0,20,110.21730772547636
+Fire Hydrant,Glutes,Bodyweight,easy,3 x 12-15 per leg,0,8,3,3.0,12.0,15.0,1,0,1.0,56,86.39006954431329
+Dumbbell Side Bend,Core (Obliques),Dumbbell,intermediate,3 x 15-20 per side,2,6,6,3.0,15.0,20.0,1,0,1.0,47,86.48266192192226
+Cable Woodchopper,Core (Obliques),Cable Machine,intermediate,3 x 15-20 per side,2,6,5,3.0,15.0,20.0,1,0,2.0,25,113.22330296087159
+Barbell Landmine Press,Shoulders,Barbell,intermediate,3 x 10-12,2,13,0,3.0,10.0,12.0,1,0,3.0,33,53.268006378681584
+Landmine Squat,Quads,Barbell,intermediate,3 x 10-12,2,12,0,3.0,10.0,12.0,1,0,3.0,53,75.05254904696046
+Cable Kickback,Glutes,Cable Machine,intermediate,3 x 12-15 per leg,2,8,5,3.0,12.0,15.0,1,0,2.0,34,103.23930437560749
+Dumbbell Z-Press,Shoulders,Dumbbells,hard,3 x 8-12,1,13,7,3.0,8.0,12.0,1,0,2.0,26,106.51582814302367
+Cable Bicep Curl,Biceps,Cable Machine,intermediate,3 x 10-12,2,1,5,3.0,10.0,12.0,1,0,2.0,27,55.749110786460484
+Cable Tricep Pushdown,Triceps,Cable Machine,intermediate,3 x 12-15,2,15,5,3.0,12.0,15.0,1,0,2.0,56,115.25493907101631
+Single-Leg Box Squat,Quads,Box,hard,3 x 8-12 per leg,1,12,4,3.0,8.0,12.0,1,0,1.0,52,60.85629699532556
+Weighted Plank,Core,Weight Plate,intermediate,3 x 30-60,2,4,21,3.0,30.0,60.0,1,0,2.0,28,116.08715887521296
+Side Plank with Hip Dip,Core (Obliques),Bodyweight,intermediate,3 x 20-30 per side,2,6,3,3.0,20.0,30.0,1,0,1.0,44,88.87791376160399
+Dumbbell Clean,Full Body,Dumbbells,hard,3 x 8-12,1,7,7,3.0,8.0,12.0,1,1,2.0,47,58.22231598517055
+Barbell Rollout,Core,Barbell,hard,4 x 10-15,1,4,0,3.0,10.0,15.0,1,0,3.0,44,69.96595690082412
+Seated Leg Press,Quads,Leg Press Machine,intermediate,3 x 10-12,2,12,13,3.0,10.0,12.0,1,0,2.0,35,82.70659256962466
+Standing Cable Row,Back,Cable Machine,intermediate,3 x 10-12,2,0,5,3.0,10.0,12.0,1,0,2.0,47,67.1810216656126
+Incline Cable Fly,Chest,Cable Machine,intermediate,3 x 10-12,2,3,5,3.0,10.0,12.0,1,0,2.0,29,102.31395865304697
+Standing Face Pull,Shoulders,Cable Machine,intermediate,3 x 12-15,2,13,5,3.0,12.0,15.0,1,0,2.0,29,53.21750661043984
+Barbell Bench Pull,Back,Barbell,hard,4 x 6-10,1,0,0,3.0,6.0,10.0,1,0,3.0,35,67.85861917004084
+Weighted Superman,Lower Back,Weight Plate,intermediate,3 x 12-15,2,11,21,3.0,12.0,15.0,1,0,2.0,45,119.28538932801992
+Single-Arm Overhead Press,Shoulders,Dumbbell,hard,3 x 8-12 per arm,1,13,6,3.0,8.0,12.0,1,0,1.0,50,89.35792992374644
+Close-Grip Bench Press,Triceps,Barbell,hard,4 x 6-10,1,15,0,3.0,6.0,10.0,1,0,3.0,56,106.41629049139625
+Side Plank with Leg Raise,Core (Obliques),Bodyweight,intermediate,3 x 20-30 per side,2,6,3,3.0,20.0,30.0,1,0,1.0,23,64.25128575460886
+Dumbbell Romanian Deadlift,Hamstrings,Dumbbells,intermediate,3 x 10-12,2,9,7,3.0,10.0,12.0,1,0,2.0,56,119.0450974783451
+Cable Reverse Fly,Shoulders,Cable Machine,intermediate,3 x 12-15,2,13,5,3.0,12.0,15.0,1,0,2.0,42,111.05322396974341
+Single-Leg Hip Thrust,Glutes,Bench,intermediate,3 x 10-12 per leg,2,8,2,3.0,10.0,12.0,1,0,1.0,46,107.57250403626986
+Kneeling Cable Crunch,Core,Cable Machine,intermediate,3 x 15-20,2,4,5,3.0,15.0,20.0,1,0,2.0,42,77.02233355592455
+Dumbbell Arnold Press,Shoulders,Dumbbells,intermediate,3 x 10-12,2,13,7,3.0,10.0,12.0,1,0,2.0,53,73.90007217941923
+Weighted Burpee,Full Body,Dumbbells,hard,4 x 10-15,1,7,7,3.0,10.0,15.0,1,1,2.0,54,73.35231606795104
+Single-Arm Cable Row,Back,Cable Machine,intermediate,3 x 10-12 per arm,2,0,5,3.0,10.0,12.0,1,0,2.0,47,118.77057886137626
+Overhead Cable Tricep Extension,Triceps,Cable Machine,intermediate,3 x 12-15,2,15,5,3.0,12.0,15.0,1,0,2.0,34,70.35980766124081
+Weighted V-Up,Core,Weight Plate,intermediate,3 x 12-15,2,4,21,3.0,12.0,15.0,1,0,2.0,26,58.60686674905915
+Single-Leg Calf Raise with Dumbbell,Calves,Dumbbell,intermediate,3 x 12-15 per leg,2,2,6,3.0,12.0,15.0,1,0,1.0,59,88.03889722441873
+Cable Shoulder Press,Shoulders,Cable Machine,intermediate,3 x 10-12,2,13,5,3.0,10.0,12.0,1,0,2.0,32,119.96050622069694
+Decline Sit-Up,Core,Bench,intermediate,3 x 15-20,2,4,2,3.0,15.0,20.0,1,0,1.0,24,117.88197205725969
+Dumbbell Reverse Chop,Core (Obliques),Dumbbell,intermediate,3 x 15-20 per side,2,6,6,3.0,15.0,20.0,1,0,1.0,52,61.014793155558564
+Barbell Clean and Press,Full Body,Barbell,hard,4 x 5-8,1,7,0,3.0,5.0,8.0,1,1,3.0,22,93.83265233369292
+Single-Leg Plank,Core,Bodyweight,intermediate,3 x 30-45 per leg,2,4,3,3.0,30.0,45.0,1,0,1.0,19,91.6886572924027
