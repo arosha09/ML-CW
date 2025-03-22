@@ -95,6 +95,18 @@ input[type="submit"]:hover {
     transform: translateY(-2px);
 }
 
+button[type="submit"]{
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #4299e1, #3182ce);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
 .workout-plan {
     display: flex;
     flex-wrap: wrap;

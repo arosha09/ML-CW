@@ -47,6 +47,10 @@
             <input type="submit" value="Predict Workout">
         </form>
 
+        <form method="POST">
+            <button type="submit" name="clear_plan" value="clear">Clear Plan</button>
+        </form>
+
         {% if error_message %}
             <div class="error">{{ error_message }}</div>
         {% endif %}

@@ -24,6 +24,9 @@ def index():
     workout_plan = None
 
     if request.method == 'POST':
+        if 'clear_plan' in request.form:
+            return render_template('index.html', levels=levels, workout_plan=None)
+
         age = int(request.form['age'])
         weight = int(request.form['weight'])
         level_input = request.form['level'].lower()
@@ -69,6 +72,8 @@ def index():
                     (data['Level'].str.lower() == level) &
                     (~data['Exercise Name'].isin(used_exercises))
                 ]
+                if muscle_data.empty:
+                    continue  # Skip muscle group if no exercises are available at the given level
                 num_exercises = np.random.randint(3, 5)
                 selected_exercises = muscle_data.sample(n=min(num_exercises, len(muscle_data)), replace=False)
                 day_plan['Exercises'][muscle_group] = []
