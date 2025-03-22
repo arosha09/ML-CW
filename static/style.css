@@ -61,7 +61,7 @@ select {
     border-radius: 8px;
     font-size: 1rem;
     color: #fff;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: black;
     backdrop-filter: blur(5px);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -217,3 +217,7 @@ li:hover {
         width: 100%;
     }
 }
+
+.dropdown{
+    background-color:black
+        }   
