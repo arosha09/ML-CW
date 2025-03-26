@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -58,72 +59,54 @@ def add_exercise_complexity(data):
 
 def train_models(X, y):
     """
-    Train multiple machine learning models and return the best one.
+    Train multiple machine learning models and generate scatter plots for each algorithm.
     """
     # Split the data
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
-    # Debug: Print shapes before SMOTE
-    print(f"X_train shape before SMOTE: {X_train.shape}")
-    print(f"X_test shape before SMOTE: {X_test.shape}")
-
     # Handle class imbalance with SMOTE
     smote = SMOTE(random_state=42)
     X_train, y_train = smote.fit_resample(X_train, y_train)
-
-    # Debug: Print shapes after SMOTE
-    print(f"X_train shape after SMOTE: {X_train.shape}")
-    print(f"X_test shape after SMOTE: {X_test.shape}")
 
     # Initialize models
     models = {
         'Decision Tree': DecisionTreeClassifier(random_state=42),
         'Random Forest': RandomForestClassifier(random_state=42),
         'KNN': KNeighborsClassifier(),
-        'SVM': SVC(random_state=42),
+        'SVM': SVC(random_state=42, probability=True),  # Enable probability for SVM
         'Gradient Boosting': GradientBoostingClassifier(random_state=42)
     }
 
-    # Train and evaluate models
-    results = {}
+    # Train models and generate scatter plots
+    os.makedirs('output', exist_ok=True)  # Ensure the output directory exists
+
     for name, model in models.items():
+        # Train the model
         model.fit(X_train, y_train)
-        y_pred = model.predict(X_test)
-        results[name] = {
-            'Accuracy': accuracy_score(y_test, y_pred),
-            'Precision': precision_score(y_test, y_pred, average='weighted', zero_division=0),
-            'Recall': recall_score(y_test, y_pred, average='weighted', zero_division=0),
-            'F1': f1_score(y_test, y_pred, average='weighted', zero_division=0)
-        }
+        
+        # Predict probabilities or classes
+        if hasattr(model, "predict_proba"):
+            y_pred_proba = model.predict_proba(X_test)[:, 1]  # Use probabilities if available
+        else:
+            y_pred_proba = model.predict(X_test)  # Use predicted classes if probabilities are not available
 
-    # Print results
-    print("Model Evaluation Results:")
-    for name, metrics in results.items():
-        print(f"{name}:")
-        for metric, value in metrics.items():
-            print(f"  {metric}: {value:.4f}")
+        # Create a scatter plot
+        plt.figure(figsize=(8, 5))
+        plt.scatter(range(len(y_test)), y_test, color='blue', label='True Values', alpha=0.6)
+        plt.scatter(range(len(y_test)), y_pred_proba, color='red', label='Predicted Values', alpha=0.6)
+        
+        # Add a prediction line
+        plt.plot(range(len(y_test)), y_pred_proba, color='green', label='Prediction Line', linewidth=1.5, alpha=0.8)
+        
+        plt.title(f'{name} Scatter Plot with Prediction Line')
+        plt.xlabel('Sample Index')
+        plt.ylabel('Predicted vs True Values')
+        plt.legend()
 
-    # Plot evaluation metrics
-    metrics_df = pd.DataFrame(results).T
-    metrics_df.plot(kind='bar', figsize=(10, 6))
-    plt.title('Model Performance Comparison')
-    plt.ylabel('Score')
-    plt.savefig('model_performance.png')
-    plt.close()
-
-    # Choose the best model (based on F1-score)
-    best_model_name = max(results, key=lambda x: results[x]['F1'])
-    best_model = models[best_model_name]
-    print(f"Best model: {best_model_name} with F1-score: {results[best_model_name]['F1']:.4f}")
-
-    # Retrain the best model on the full dataset
-    best_model.fit(X, y)
-
-    # Save the best model
-    with open('models/model.pkl', 'wb') as f:
-        pickle.dump(best_model, f)
-
-    return best_model, results
+        # Save the scatter plot as a PNG file
+        filename = f'output/{name.replace(" ", "_").lower()}_scatter_plot_with_line.png'
+        plt.savefig(filename)
+        plt.close()
 
 if __name__ == "__main__":
     # Load and preprocess data
@@ -148,4 +131,4 @@ if __name__ == "__main__":
         print(f"Shape of X before splitting: {X.shape}")
         
         # Train and evaluate models
-        best_model, results = train_models(X, y)
+        train_models(X, y)
